@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Business Technology Association</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+
+
+        .navbar {
+        margin-bottom: 0;
+        background-color: transparent;
+        color: white;
+        z-index: 9999;
+        border: 0;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+      }
+
+      .navbar li a, .navbar .navbar-brand {
+        color: #fff !important;
+      }
+
+      .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: #00108e !important;
+        background-color: #fff !important;
+      }
+
+      .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #fff !important;
+      }
+
+    .jumbotron {
+        background-color:#00108e;
+        background-image:url("sanfran.jpg");
+        color: #ffffff;
+        padding-top: 250px;
+        padding-bottom: 250px;
+        margin-bottom: 0px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="jumbotron text-center" >
+  <h1>Team</h1>
+  <p></p>
+  </div>
+
+  <style>
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+
+  .container-fluid {
+    padding: 60px 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+  }
+
+
+    @media screen and (max-width: 768px) {
+        .col-sm-4 {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+    }
+
+
+
+
+    #logo{
+       visibility:visible;
+
+    }
+
+
+
+  </style>
+
+
+    <div class="container-fluid" >
+      <div class="row">
+        <div class="col-sm-4 text-center">
+          <img src = "david.jpg" class= "img-circle" height=200px width=200px>
+          <h3>David Qin</h3>
+          <h4>President</h4>
+
+        </div>
+        <div class="col-sm-7 text-left">
+          <br><br><br>
+          <p>David is the current President and founder of BTA. As a Senior
+            pursuing a degree in business, he is passionate about the intersection
+            of business and technology, and hopes to connect with others with similar interests
+            and ambitions.  In his spare time, he enjoys reading,
+            hanging out with friends, and playing music</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img id = "logo" src= "btalogo.png" height="50px" width="50px">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="team.html">TEAM</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="news.html">TECH NEWS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+    $(document).ready(function(){
+      $(window).scroll(function() {
+        if ($(document).scrollTop() > 600) {
+          $(".navbar-fixed-top").css("background-color", "#00108e");
+          $("#logo").css("visibility: visible");
+        } else {
+          $(".navbar-fixed-top").css("background-color", "transparent");
+          $("#logo").css("visibility: hidden");
+        }
+      });
+    });
+</script>
+
+
+
+</body>
+
+<style>
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+
+}
+
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}
+</style>
+<footer class="text-center">
+  <a class="up-arrow" href="#header" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>© 2017 Business Technology Association</p>
+</footer>
+
+</html>
